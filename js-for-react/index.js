@@ -1,5 +1,9 @@
 console.log("hello world, js fo react")
-
+/*
+console.log("---------|||||||||||||||||---------")
+console.log("Funciones en JS")
+console.log("---------|||||||||||||||||---------")
+console.log("")
 console.log("Funcion hello")
 function hello(userName){
     return "hola " + userName
@@ -42,3 +46,44 @@ function addUpgraded(num1=0,num2=0){
 }
 console.log(addNotNaN(3))
 console.log("-----------------------------------")
+
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+*/
+console.log("---------|||||||||||||||||---------")
+console.log("Objetos en JS")
+console.log("---------|||||||||||||||||---------")
+//los objetos se definen como lo que esta dentro de unas llaves {}
+//tienen estructura llave valor eje:
+//{
+//  llave: valor
+//}
+//si se van a tener varios atributos se separan por ,
+//se pueden almacenar por ejemplo en constantes o varaibles
+
+
+const user = {
+    name:"Joselito",
+    lastName:"Perez",
+    age:38,
+    addres:{
+        country: "Colombia",
+        street: "quety 15",
+        number: "importa number 7-22"
+    },
+    friends: ["luna","antonella","dante","Niño"],
+    active: true,
+    sendEmail: function(){
+        return "sending email..."
+    }
+}
+console.log(user)
+
+//como acceder a llaves especificas de un objeto ?
+//console.log(user.name)
+console.log("el nombre del usuario es: "+ user.name)
+console.log("el usuario vive en: "+ user.addres.country)
+
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
