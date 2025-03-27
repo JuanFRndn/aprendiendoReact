@@ -49,7 +49,7 @@ console.log("-----------------------------------")
 
 console.log("---------------**********-----------")
 console.log("---------------**********-----------")
-*/
+
 console.log("---------|||||||||||||||||---------")
 console.log("Objetos en JS")
 console.log("---------|||||||||||||||||---------")
@@ -83,6 +83,32 @@ console.log(user)
 //console.log(user.name)
 console.log("el nombre del usuario es: "+ user.name)
 console.log("el usuario vive en: "+ user.addres.country)
+
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+*/
+console.log("---------|||||||||||||||||---------")
+console.log("shorthand property names")
+console.log("---------|||||||||||||||||---------")
+//se puede acortar la definicion y asignación de un objeto
+
+const name = "laptop"
+const price = 3000
+
+//dentro de un objeto como el siguiente newProduct es igual
+// que newProduct1 ya que para la JS es la misma sintaxis
+//const newProduct = {
+//    name: name,
+//    price: price
+//}
+//console.log(newProduct)
+
+const newProduct1= {
+    name,
+    price
+}
+console.log(newProduct1)
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
