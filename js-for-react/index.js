@@ -113,7 +113,7 @@ console.log(newProduct1)
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
 console.log("---------------**********-----------")
-*/
+
 
 console.log("---------|||||||||||||||||---------")
 console.log("DOM y su manipulación")
@@ -135,6 +135,42 @@ button.addEventListener('click', function () {
     title.innerText = 'Texto actualizado con JS'
     alert('se realizo un click')
 })
+*/
+
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+
+console.log("---------|||||||||||||||||---------")
+console.log("Destructuring")
+console.log("---------|||||||||||||||||---------")
+
+const user = {
+    name :'Joel',
+    age : 30
+}
+
+//usar un objeto como parametro
+function printInfo(user){
+    //return '<h1>Hola '+user['name']+'</h1>'
+    return '<h1>Hola '+user.name+'</h1>'
+}
+
+
+//destructuracion
+function printInfo1({name}){
+    return '<h1>Hola '+name+'</h1>'
+}
+
+function printInfo2(usuario){
+    const {name,age} = user
+    console.log(name,age)
+    return '<h1>Hola '+name+'</h1>'
+}
+
+console.log(printInfo(user))
+
+document.body.innerHTML = printInfo2(user)
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
