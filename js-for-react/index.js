@@ -122,11 +122,19 @@ console.log("---------|||||||||||||||||---------")
 
 const title= document.createElement('h1')
 title.innerText = 'hola mundo desde JS'
-document.body.append(title)
 
 const button= document.createElement('button')
 button.innerText= 'click'
+
+document.body.append(title)
 document.body.append(button)
+
+//event handlers - controlar acciones que puede hacer un objeto ?
+button.addEventListener('click', function () {
+    //console.log("hola mundo")
+    title.innerText = 'Texto actualizado con JS'
+    alert('se realizo un click')
+})
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
