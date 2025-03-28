@@ -275,7 +275,7 @@ console.log(showObject()) //console.log(showObject().name) para ver un atributo 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
 console.log("---------------**********-----------")
-*/
+
 console.log("---------|||||||||||||||||---------")
 console.log("manejo del return")
 console.log("---------|||||||||||||||||---------")
@@ -307,11 +307,49 @@ document.body.append(button)
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
 console.log("---------------**********-----------")
+*/
+
+console.log("---------|||||||||||||||||---------")
+console.log("interpolacion - string literals")
+console.log("---------|||||||||||||||||---------")
+
+const background = 'red'
+const color = 'white'
+
+const isAuthorized = true;
+
+//esto
+const result = background + color
+//es lo mismo que esto, con las tildes a la izquierda (``) alt gr + cierro corchete
+//puedo insertar variable directamente a un string
+const result1 = `estos son estilos: ${background}${color}`  
+
+console.log(result)
+
+const button = document.createElement('button')
+button.innerText='click me'
+
+//entonces en vez de hacer lo siguiente que no es buena practica y es poco legible
+//button.style= 'background: '+ background +'; color:'+color+';'
+// se debe utilizar los string literals (``) que tienen la misma funcionalidad
+// pero son mas legibles y es una buena practica
+button.style= `background: ${isAuthorized ? 'green':background}; color: ${color};`
+
+//el operador ternario (variable? true: false) sirve para ejecutar if else en un linea 
+
+document.body.append(button)
+
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+
 
 /*
 console.log("---------|||||||||||||||||---------")
 console.log("Funciones flecha/arrow functions")
 console.log("---------|||||||||||||||||---------")
+
+
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
