@@ -135,7 +135,6 @@ button.addEventListener('click', function () {
     title.innerText = 'Texto actualizado con JS'
     alert('se realizo un click')
 })
-*/
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
@@ -171,6 +170,60 @@ function printInfo2(usuario){
 console.log(printInfo(user))
 
 document.body.innerHTML = printInfo2(user)
+
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+*/
+
+console.log("---------|||||||||||||||||---------")
+console.log("Funciones anonimas")
+console.log("---------|||||||||||||||||---------")
+//definición de una función anonima
+// function(){
+//    hacer algo
+//}
+
+//ejemplo 1
+// Crear y mostrar una funcion normalmente
+function start(){
+    return 'Starting...'
+}
+console.log(start())
+
+//como una función anonima
+//function(){
+//    return 'Starting...'
+//} //para tener como retorno toda la funcion
+
+//como se puede usar
+console.log(function(){
+    return 'Starting...'
+//}) //para tener como retorno toda la funcion
+}()) //para tener como retorno lo que retorne la funcion
+
+//ejemplo 2
+const button = document.createElement('button')
+button.innerText= 'Clickeame'
+
+//opcion 1 sin usar funciones anonimas
+//function handleClick(){
+//    alert('clickeado')
+//}
+
+//butoon.addEventListener('click',handleClick())
+
+//opcion 2A usando la funcion dentro del mismo addEventListener
+//button.addEventListener('click',function handleClick(){
+//    alert('clickeado')
+//})
+
+//opcion 2B usando funciones anonimas
+button.addEventListener('click',function(){
+    alert('clickeado')
+})
+
+document.body.append(button)
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
