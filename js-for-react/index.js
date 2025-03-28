@@ -228,7 +228,7 @@ document.body.append(button)
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
 console.log("---------------**********-----------")
-*/
+
 console.log("---------|||||||||||||||||---------")
 console.log("Funciones flecha/arrow functions")
 console.log("---------|||||||||||||||||---------")
@@ -272,7 +272,48 @@ console.log(showBoolean())
 console.log(showArray())
 console.log(showObject()) //console.log(showObject().name) para ver un atributo del objeto
 
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+*/
+console.log("---------|||||||||||||||||---------")
+console.log("manejo del return")
+console.log("---------|||||||||||||||||---------")
+
+const button = document.createElement('button')
+button.innerText ='click me'
+
+const isAuthorized = true
+
+//en vez de usar
+//button.addEventListener('click', () => {
+//    if(isAuthorized){
+//        alert('esta autorizado')
+//    }else{
+//        alert('no esta autorizado')
+//    }
+//})
+
+//por legibilidad y buenas practicas se puede suar
+button.addEventListener('click', () => {
+    if(isAuthorized){
+        return alert('esta autorizado')
+    }
+    alert('no esta autorizado')
+})
+
+document.body.append(button)
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
 console.log("---------------**********-----------")
+
+/*
+console.log("---------|||||||||||||||||---------")
+console.log("Funciones flecha/arrow functions")
+console.log("---------|||||||||||||||||---------")
+
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+*/
