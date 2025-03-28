@@ -174,7 +174,7 @@ document.body.innerHTML = printInfo2(user)
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
 console.log("---------------**********-----------")
-*/
+
 
 console.log("---------|||||||||||||||||---------")
 console.log("Funciones anonimas")
@@ -224,6 +224,54 @@ button.addEventListener('click',function(){
 })
 
 document.body.append(button)
+
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+*/
+console.log("---------|||||||||||||||||---------")
+console.log("Funciones flecha/arrow functions")
+console.log("---------|||||||||||||||||---------")
+//funcion normal
+//function add(x,y){
+//    return x+y
+//}
+
+//funcion flecha
+//const add = (x,y) => {
+//    x+y
+//}
+
+const button = document.createElement('button')
+button.innerText='Click me'
+button.addEventListener('click', () =>{
+    alert('clicked')
+})
+document.body.append(button)
+
+//funciones flecha de una sola linea
+const showText = () => 'hola mundo'
+const showNumber = () => 22
+const showBoolean = () => true
+const showArray = () => [1,2,'Joel',3,4]
+
+//las funciones flecha para objetos tienen una sintaxis diferente
+//para no escribir toda la funcion con el fin que siga siendo una funcion de una linea
+//como la siguiente
+//const showObject = () => {
+//    return { name : 'Joel'}
+//} 
+
+//se escribe () => ({llave:valor})
+const showObject = () => ({name:'Joel'})
+
+
+console.log(showText())
+console.log(showNumber())
+console.log(showBoolean())
+console.log(showArray())
+console.log(showObject()) //console.log(showObject().name) para ver un atributo del objeto
+
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
