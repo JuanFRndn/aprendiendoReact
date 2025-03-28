@@ -87,7 +87,7 @@ console.log("el usuario vive en: "+ user.addres.country)
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
 console.log("---------------**********-----------")
-*/
+
 console.log("---------|||||||||||||||||---------")
 console.log("shorthand property names")
 console.log("---------|||||||||||||||||---------")
@@ -109,6 +109,24 @@ const newProduct1= {
     price
 }
 console.log(newProduct1)
+
+console.log("-----------------------------------")
+console.log("---------------**********-----------")
+console.log("---------------**********-----------")
+*/
+
+console.log("---------|||||||||||||||||---------")
+console.log("DOM y su manipulación")
+console.log("---------|||||||||||||||||---------")
+//DOM es Document Object Model (el archivo que se genera con el html)
+
+const title= document.createElement('h1')
+title.innerText = 'hola mundo desde JS'
+document.body.append(title)
+
+const button= document.createElement('button')
+button.innerText= 'click'
+document.body.append(button)
 
 console.log("-----------------------------------")
 console.log("---------------**********-----------")
